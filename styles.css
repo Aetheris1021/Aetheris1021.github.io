@@ -269,7 +269,12 @@ h1 span {
 
 h2 {
   margin-bottom: 0;
+}
+
+.display-heading {
+  font-family: var(--sans);
   font-size: clamp(2.1rem, 4vw, 3.8rem);
+  font-weight: 800;
   line-height: 1.04;
   letter-spacing: -0.075em;
 }
