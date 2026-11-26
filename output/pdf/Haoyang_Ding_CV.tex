@@ -9,12 +9,12 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlength{\tabcolsep}{0pt}
-\newcommand{\ressection}[1]{\vspace{4pt}{\normalsize\bfseries #1}\par\vspace{1pt}\hrule\vspace{7pt}}
+\newcommand{\ressection}[1]{\vspace{4pt}{\normalsize\bfseries #1}\par\vspace{4pt}\hrule\vspace{5pt}}
 \newcommand{\entry}[3]{\textbf{#1}\hfill {#2}\par\if\relax\detokenize{#3}\relax\else{\fontsize{9}{12}\selectfont\textit{#3}\par}\fi\vspace{-2pt}}
 \newenvironment{tightitems}{\setlength{\leftmargini}{1.4em}\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\topsep}{1pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-1pt}}
 \begin{document}
 \color{ink}
-\fontsize{10}{12}\selectfont
+\fontsize{10}{11.5}\selectfont
 \begin{center}
   {\LARGE\bfseries HAOYANG DING}\\[2pt]
   Champaign, IL \quad $\vert$ \quad (608) 960-0703 \quad $\vert$ \quad
@@ -35,7 +35,7 @@ GPA: 3.66/4.00 \quad $\vert$ \quad Dean's List (four semesters)
 \textbf{Data \& Experimentation:} pandas, NumPy, Apache Spark, time-series validation, reproducible analysis
 
 \ressection{Experience}
-\entry{Jiangsu Delauney Information Technology Co., Ltd.}{Jun 2024 -- Jul 2024}{Software Development Engineer Intern $\vert$ Nanjing, China}
+\entry{Jiangsu Delauney Information Technology Co., Ltd.}{Jun 2024 -- Jul 2024}{Software Development Intern $\vert$ Nanjing, China}
 \begin{tightitems}
   \item Implemented \textbf{nine C++/ObjectARX command handlers} for AICAD, covering lines, polylines, circles, arcs, ellipses, text, layers, dimensions, and entity selection.
   \item Registered commands with AutoCAD’s command system and database APIs to create drawing entities.
@@ -45,28 +45,28 @@ GPA: 3.66/4.00 \quad $\vert$ \quad Dean's List (four semesters)
 \ressection{Projects}
 \entry{Stock Market Movement Prediction \normalfont\textit{Python / UIUC CS 441}}{Sep 2026 -- Present}{}
 \begin{tightitems}
-  \item Developed a machine learning pipeline for next-session stock direction prediction across \textbf{AAPL, MSFT, and NVDA}, using historical prices, technical indicators, and earnings data.
-  \item Used chronological, leakage-safe splits to benchmark \textbf{Logistic Regression, XGBoost, LSTM, and GRU} by log loss, ROC-AUC, and calibration.
+  \item Built next-session direction forecasts for \textbf{AAPL, MSFT, and NVDA} using market, earnings, SEC, and limited news data.
+  \item Purged chronological splits; benchmarked a prevalence baseline, \textbf{Logistic Regression, XGBoost, LSTM, and GRU} by log loss, Brier score, ROC-AUC, and calibration.
 \end{tightitems}
 \entry{Flexera Win/Loss Prediction System \normalfont\textit{Python, React / UW--Madison CS 620 Capstone}}{Sep 2025 -- Dec 2025}{}
 \begin{tightitems}
-  \item Built an \textbf{XGBoost sales-opportunity model} with engineered features and calibrated win probabilities.
-  \item Integrated Python-generated predictions into an interactive \textbf{React dashboard} for deal-level analysis, model performance visualization, and competitor insights.
+  \item Built an \textbf{XGBoost opportunity model} from 60+ geographic, temporal, product, and engagement features; project results report 99.14\% ROC-AUC, 99.80\% PR-AUC, and 0.0259 Brier score.
+  \item Integrated predictions into a \textbf{React dashboard} for deal-level analysis, model performance, calibration, and competitor insights.
 \end{tightitems}
 \entry{Course Enrollment Optimizer \normalfont\textit{Julia / UW--Madison CS 524}}{Sep 2024 -- Dec 2024}{}
 \begin{tightitems}
-  \item Built a mixed-integer course-selection model with binary decision and elective-slack variables to satisfy CS/Data Science/Economics triple-major requirements while minimizing courses and preventing elective double counting; compared baseline, CS-focused, focused-curriculum, and late-major scenarios.
+  \item Built a mixed-integer model with binary course and elective-slack variables to minimize a CS, Data Science, and Economics triple-major plan; enforced core, elective, and credit rules, prevented double counting, and compared baseline, CS-focused, focused-curriculum, and late-major scenarios.
 \end{tightitems}
 \ressection{Research Experience}
 \entry{University of Wisconsin--Madison \normalfont\textit{Research Assistant / Advisor: Bin Ran}}{Feb 2025 -- May 2026}{}
 \begin{tightitems}
-  \item Investigated autonomous-vehicle trajectory planning with \textbf{deep learning and Monte Carlo Tree Search}; assessed methods in simulation.
-  \item Co-authored \emph{SRA-CP} (arXiv:2511.17461), evaluating risk-aware cooperative perception; the study reports comparable safety-critical detection at \textbf{20\% of full-sharing bandwidth}.
+  \item Evaluated autonomous-vehicle trajectory planning with \textbf{deep learning and Monte Carlo Tree Search} and risk-aware cooperative perception in simulation.
+  \item Co-authored \emph{SRA-CP} (arXiv:2511.17461); results report comparable safety-critical detection using \textbf{20\% of full-sharing bandwidth}, less than 1\% AP loss, and 15\% improvement over selective methods without risk awareness.
 \end{tightitems}
 \entry{Southeast University \normalfont\textit{Research Assistant / Advisor: Zhishui Liang}}{Mar 2021 -- Sep 2021}{}
 \begin{tightitems}
   \item Developed an underwater bridge-damage recognition approach using image preprocessing, noise reduction, and a \textbf{VGG16-based FCN}; experiments reported over \textbf{90\% crack-identification accuracy}.
-  \item Second author of a \textbf{Springer conference paper} presented at \textbf{EVACES 2021} (published in \emph{Lecture Notes in Civil Engineering}).
+  \item Second author of a \textbf{Springer conference paper} presented at \textbf{EVACES 2021} and published in \emph{Lecture Notes in Civil Engineering}.
   \item Co-inventor on patents CN215574839U (2022) and CN113671032B (2023), covering underwater concrete damage detection and localization devices.
 \end{tightitems}
 
