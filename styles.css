@@ -224,6 +224,7 @@ h1 span {
 .hero-note {
   max-width: 270px;
   justify-self: end;
+  transform: translateY(76px);
   padding: 25px;
   border: 1px solid var(--line);
   border-radius: 5px;
@@ -440,6 +441,29 @@ em {
   border-top: 1px solid var(--line);
 }
 
+.patent-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 36px;
+}
+
+.patent-item h3,
+.patent-description {
+  grid-column: 1;
+}
+
+.patent-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  color: var(--muted);
+  font: 500 0.68rem var(--mono);
+  text-align: right;
+}
+
 .teaching-item h3 {
   margin: 0 0 8px;
   font-size: 1.15rem;
@@ -603,6 +627,7 @@ em {
   .hero-note {
     max-width: none;
     margin-top: 58px;
+    transform: none;
   }
 
   .section {
@@ -666,6 +691,16 @@ em {
 
   .research-item {
     display: block;
+  }
+
+  .patent-item {
+    display: block;
+  }
+
+  .patent-meta {
+    margin-top: 14px;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .research-date {
