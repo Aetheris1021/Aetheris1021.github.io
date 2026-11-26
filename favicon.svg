@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>HD monogram</title>
+  <rect width="64" height="64" rx="12" fill="#243331" />
+  <path d="M14 16h8v12h12V16h8v32h-8V36H22v12h-8V16Z" fill="#fbfcfa" />
+  <path d="M48 16h3v32h-3z" fill="#82b89a" />
+</svg>
