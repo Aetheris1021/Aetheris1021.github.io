@@ -367,7 +367,8 @@ em {
 
 .timeline-item ul {
   margin: 24px 0 0;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.8;
