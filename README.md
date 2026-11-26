@@ -1,12 +1,33 @@
-# Aetheris1021.github.io
+# Haoyang Ding — Personal & Academic Website
 
-Personal and academic website for GitHub Pages.
+Personal website for [Haoyang Ding](https://github.com/Aetheris1021), focused on
+applied AI, large language models, and emerging medical applications.
 
-## Customize
+Live site: [aetheris1021.github.io](https://aetheris1021.github.io/)
 
-- Update the project descriptions and social links in `index.html`.
-- Adjust colors and typography from the variables at the top of `styles.css`.
+## Stack
 
-The site is dependency-free and deploys directly from the repository root. Open
-`index.html` locally for a quick preview, or enable GitHub Pages for the `main`
-branch in the repository settings.
+This is a dependency-free static site built with:
+
+- `index.html` — page content and semantic structure
+- `styles.css` — responsive layout, typography, color system, and accessibility states
+- `script.js` — mobile navigation, dynamic year, and email fallback feedback
+
+## Local preview
+
+From the repository root, run:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open [http://localhost:4173](http://localhost:4173).
+
+## Updating the site
+
+- Edit project, research, education, and experience content in `index.html`.
+- Update links and contact information in `index.html`.
+- Adjust the color and typography variables at the top of `styles.css`.
+- Keep technical claims, metrics, and publication details consistent with the linked repository or paper.
+
+GitHub Pages deploys the repository root from the `main` branch.
