@@ -441,14 +441,17 @@ em {
   border-top: 1px solid var(--line);
 }
 
-.teaching-item:not(.patent-item) {
+.teaching-details {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: baseline;
   gap: 36px;
 }
 
-.teaching-item:not(.patent-item) p {
+.teaching-courses {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.74rem;
   text-align: right;
 }
 
@@ -704,11 +707,11 @@ em {
     display: block;
   }
 
-  .teaching-item:not(.patent-item) {
+  .teaching-details {
     display: block;
   }
 
-  .teaching-item:not(.patent-item) p {
+  .teaching-courses {
     margin-top: 8px;
     text-align: left;
   }
