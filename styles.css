@@ -395,13 +395,17 @@ em {
   text-align: right;
 }
 
-.project-card p,
-.research-item p:not(.organization) {
+.detail-bullets {
   max-width: 790px;
   margin: 13px 0 0;
+  padding-left: 18px;
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.8;
+}
+
+.detail-bullets li + li {
+  margin-top: 10px;
 }
 
 .project-card a,
@@ -427,7 +431,7 @@ em {
   font: 500 0.67rem var(--mono);
 }
 
-.research-item p:not(.organization),
+.research-item .detail-bullets,
 .research-item a {
   grid-column: 1 / -1;
 }
