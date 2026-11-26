@@ -1,5 +1,6 @@
 \documentclass[10pt]{article}
 \usepackage[letterpaper,left=0.62in,right=0.62in,top=0.50in,bottom=0.48in]{geometry}
+\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
@@ -10,7 +11,7 @@
 \setlength{\tabcolsep}{0pt}
 \newcommand{\ressection}[1]{\vspace{7pt}{\normalsize\bfseries #1}\par\vspace{1pt}\hrule\vspace{1pt}}
 \newcommand{\entry}[3]{\textbf{#1}\hfill {#2}\par\if\relax\detokenize{#3}\relax\else{\fontsize{9}{12}\selectfont\textit{#3}\par}\fi\vspace{-2pt}}
-\newenvironment{tightitems}{\begin{itemize}\setlength{\leftmargin}{1.2em}\setlength{\itemsep}{0pt}\setlength{\topsep}{1pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-1pt}}
+\newenvironment{tightitems}{\setlength{\leftmargini}{1.4em}\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\topsep}{1pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-1pt}}
 \begin{document}
 \color{ink}
 \fontsize{10}{12}\selectfont
@@ -45,7 +46,7 @@ GPA: 3.66/4.00 \quad $\vert$ \quad Dean's List (four semesters)
 \entry{Stock Market Movement Prediction \normalfont\textit{Python / UIUC CS 441}}{Nov 2026 -- Present}{}
 \begin{tightitems}
   \item Developed a machine learning pipeline for next-session stock direction prediction across \textbf{AAPL, MSFT, and NVDA}, using historical prices, technical indicators, and earnings data.
-  \item Applied chronological splits and \textbf{label-leakage safeguards}; benchmarked \textbf{Logistic Regression, XGBoost, LSTM, and GRU} using log loss, ROC-AUC, and calibration.
+  \item Used chronological, leakage-safe splits to benchmark \textbf{Logistic Regression, XGBoost, LSTM, and GRU} by log loss, ROC-AUC, and calibration.
 \end{tightitems}
 \entry{Flexera Win/Loss Prediction System \normalfont\textit{Python, React / CS 620 Capstone}}{Sep 2025 -- Dec 2025}{}
 \begin{tightitems}
