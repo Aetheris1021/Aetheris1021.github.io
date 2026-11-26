@@ -13,6 +13,8 @@ This is a dependency-free static site built with:
 - `styles.css` — responsive layout, typography, color system, and accessibility states
 - `script.js` — mobile navigation, dynamic year, and email fallback feedback
 - `favicon.svg` — lightweight HD monogram favicon
+- `output/pdf/Haoyang_Ding_CV.pdf` — current downloadable CV
+- `output/pdf/Haoyang_Ding_CV.tex` — editable LaTeX source for the CV
 
 ## Local preview
 
