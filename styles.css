@@ -136,7 +136,7 @@ button {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
   gap: 80px;
-  align-items: end;
+  align-items: start;
   padding-block: 78px 82px;
 }
 
@@ -296,7 +296,7 @@ em {
 .timeline-item,
 .education-item {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: minmax(0, 1fr) 220px;
   gap: 48px;
   padding: 28px 0;
   border-top: 1px solid var(--line);
@@ -316,6 +316,18 @@ em {
   gap: 7px;
   color: var(--muted);
   font: 500 0.68rem var(--mono);
+}
+
+.timeline-meta {
+  grid-column: 2;
+  grid-row: 1;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.timeline-item > div:not(.timeline-meta) {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .timeline-item h3,
@@ -612,6 +624,11 @@ em {
 
   .timeline-item {
     display: block;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+    text-align: left;
   }
 
   .education-item {

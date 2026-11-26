@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[letterpaper,left=0.62in,right=0.62in,top=0.48in,bottom=0.48in]{geometry}
+\usepackage[letterpaper,left=0.62in,right=0.62in,top=0.50in,bottom=0.48in]{geometry}
 \usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
@@ -8,19 +8,19 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlength{\tabcolsep}{0pt}
-\newcommand{\ressection}[1]{\vspace{7pt}{\large\bfseries #1}\par\vspace{1pt}\hrule\vspace{1pt}}
-\newcommand{\entry}[3]{\textbf{#1}\hfill {#2}\par\if\relax\detokenize{#3}\relax\else\textit{#3}\par\fi\vspace{-2pt}}
-\newenvironment{tightitems}{\begin{itemize}\setlength{\leftmargin}{1.2em}\setlength{\itemsep}{0pt}\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-1pt}}
+\newcommand{\ressection}[1]{\vspace{7pt}{\normalsize\bfseries #1}\par\vspace{1pt}\hrule\vspace{1pt}}
+\newcommand{\entry}[3]{\textbf{#1}\hfill {#2}\par\if\relax\detokenize{#3}\relax\else{\fontsize{9}{12}\selectfont\textit{#3}\par}\fi\vspace{-2pt}}
+\newenvironment{tightitems}{\begin{itemize}\setlength{\leftmargin}{1.2em}\setlength{\itemsep}{0pt}\setlength{\topsep}{1pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-1pt}}
 \begin{document}
 \color{ink}
-\fontsize{10}{10.8}\selectfont
+\fontsize{10}{12}\selectfont
 \begin{center}
   {\LARGE\bfseries HAOYANG DING}\\[2pt]
   Champaign, IL \quad $\vert$ \quad (608) 960-0703 \quad $\vert$ \quad
   \href{mailto:hding16@illinois.edu}{hding16@illinois.edu} \quad $\vert$ \quad
   \href{https://aetheris1021.github.io/}{aetheris1021.github.io}
 \end{center}
-\vspace{-6pt}
+\vspace{-2.5pt}
 
 \ressection{Education}
 \entry{University of Illinois Urbana-Champaign}{Aug 2026 -- May 2028 (Expected)}{Master of Computer Science (MCS) $\vert$ AI Track (In Progress)}
@@ -54,14 +54,13 @@ GPA: 3.66/4.00 \quad $\vert$ \quad Dean's List (four semesters)
 \end{tightitems}
 \entry{UW--Madison Course Optimization \normalfont\textit{Julia / UW--Madison CS 524}}{Sep 2024 -- Dec 2024}{}
 \begin{tightitems}
-  \item Developed a \textbf{mixed-integer programming} model to optimize multi-major course schedules under degree requirements; evaluated weighted priorities and scheduling scenarios.
+  \item Formulated a mixed-integer model for multi-major course scheduling under degree requirements.
 \end{tightitems}
-
 \ressection{Research Experience}
 \entry{University of Wisconsin--Madison \normalfont\textit{Research Assistant / Advisor: Bin Ran}}{Feb 2025 -- May 2026}{}
 \begin{tightitems}
   \item Investigated autonomous-vehicle trajectory planning with \textbf{deep learning and Monte Carlo Tree Search}; assessed methods in simulation.
-  \item Evaluated risk-aware cooperative perception methods and co-authored \emph{SRA-CP} (arXiv:2511.17461), contributing to experimental analysis and manuscript writing; the study reports comparable safety-critical detection at \textbf{20\% of full-sharing bandwidth}.
+  \item Co-authored \emph{SRA-CP} (arXiv:2511.17461), evaluating risk-aware cooperative perception; the study reports comparable safety-critical detection at \textbf{20\% of full-sharing bandwidth}.
 \end{tightitems}
 \entry{Southeast University \normalfont\textit{Research Assistant / Advisor: Zhishui Liang}}{Mar 2021 -- Sep 2021}{}
 \begin{tightitems}
