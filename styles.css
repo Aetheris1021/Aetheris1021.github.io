@@ -163,7 +163,7 @@ p {
 h1 {
   margin: 24px 0 42px;
   font-size: clamp(4.5rem, 10vw, 8.8rem);
-  line-height: 0.82;
+  line-height: 0.9;
   letter-spacing: -0.1em;
 }
 
