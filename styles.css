@@ -224,7 +224,7 @@ h1 span {
 .hero-note {
   max-width: 270px;
   justify-self: end;
-  transform: translateY(76px);
+  transform: translateY(24px);
   padding: 25px;
   border: 1px solid var(--line);
   border-radius: 5px;
@@ -439,6 +439,17 @@ em {
 .teaching-item {
   padding: 24px 0;
   border-top: 1px solid var(--line);
+}
+
+.teaching-item:not(.patent-item) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 36px;
+}
+
+.teaching-item:not(.patent-item) p {
+  text-align: right;
 }
 
 .patent-item {
@@ -691,6 +702,15 @@ em {
 
   .research-item {
     display: block;
+  }
+
+  .teaching-item:not(.patent-item) {
+    display: block;
+  }
+
+  .teaching-item:not(.patent-item) p {
+    margin-top: 8px;
+    text-align: left;
   }
 
   .patent-item {
