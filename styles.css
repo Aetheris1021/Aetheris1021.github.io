@@ -279,6 +279,10 @@ h2 {
   letter-spacing: -0.075em;
 }
 
+.heading-nowrap {
+  white-space: nowrap;
+}
+
 em {
   font-family: inherit;
   font-style: normal;
@@ -495,7 +499,6 @@ em {
 
 .skills-heading h2 {
   margin-top: 25px;
-  font-size: 2.4rem;
 }
 
 .skill-groups {
@@ -717,10 +720,6 @@ em {
     grid-template-columns: 1fr;
     gap: 22px;
     margin-top: 28px;
-  }
-
-  .skills-heading h2 {
-    font-size: 2.2rem;
   }
 
   .contact {
