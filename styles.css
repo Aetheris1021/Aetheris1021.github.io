@@ -267,6 +267,16 @@ h1 span {
   margin-top: 26px;
 }
 
+.about-grid {
+  display: block;
+}
+
+.about-grid .section-copy {
+  max-width: 800px;
+  margin-top: 24px;
+  padding-top: 0;
+}
+
 h2 {
   margin-bottom: 0;
 }
@@ -277,10 +287,6 @@ h2 {
   font-weight: 800;
   line-height: 1.04;
   letter-spacing: -0.075em;
-}
-
-.heading-nowrap {
-  white-space: nowrap;
 }
 
 em {
@@ -578,10 +584,6 @@ em {
 }
 
 @media (max-width: 760px) {
-  .heading-nowrap {
-    white-space: normal;
-  }
-
   .container {
     width: min(100% - 32px, 560px);
   }
