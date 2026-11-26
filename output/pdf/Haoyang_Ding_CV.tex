@@ -1,71 +1,76 @@
-\documentclass[10pt]{article}
-\usepackage[letterpaper,margin=0.58in]{geometry}
+\documentclass[9pt]{article}
+\usepackage[letterpaper,margin=0.48in]{geometry}
+\usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
-\definecolor{ink}{HTML}{243331}
-\definecolor{accent}{HTML}{47745F}
+\setmainfont{Georgia}
+\definecolor{ink}{HTML}{171717}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\newcommand{\entry}[3]{\textbf{#1}\hfill {\small #2}\\[-1pt]{\small\itshape #3}\par}
+\setlength{\tabcolsep}{0pt}
+\newcommand{\ressection}[1]{\vspace{4pt}{\large\bfseries #1}\par\vspace{1pt}\hrule\vspace{2pt}}
+\newcommand{\entry}[3]{\textbf{#1}\hfill {#2}\par\textit{#3}\par\vspace{1pt}}
+\newenvironment{tightitems}{\begin{itemize}\setlength{\leftmargin}{1.2em}\setlength{\itemsep}{0pt}\setlength{\topsep}{1pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}{\end{itemize}\vspace{-2pt}}
 \begin{document}
 \color{ink}
+\fontsize{9}{10.1}\selectfont
 \begin{center}
-  {\LARGE\bfseries Haoyang Ding}\\[3pt]
+  {\LARGE\bfseries Haoyang Ding}\\[2pt]
   Champaign, IL \quad $\vert$ \quad (608) 960-0703 \quad $\vert$ \quad
   \href{mailto:hding16@illinois.edu}{hding16@illinois.edu} \quad $\vert$ \quad
-  \href{https://github.com/Aetheris1021}{GitHub}
+  \href{https://aetheris1021.github.io/}{Personal Webpage}
 \end{center}
-\vspace{-7pt}
+\vspace{-6pt}
 
-\section{Education}
-\entry{University of Illinois Urbana-Champaign}{Aug 2026 -- May 2028 (Expected)}{Master of Computer Science (MCS) $\vert$ AI Specialized Track, in progress}
-\vspace{2pt}
-\entry{University of Wisconsin--Madison}{Sep 2022 -- May 2026}{B.S. in Computer Science and Data Science $\vert$ GPA: 3.66/4.00 $\vert$ Dean's List (four semesters)}
+\ressection{Education}
+\entry{University of Illinois Urbana-Champaign}{Aug 2026 -- May 2028 (Expected)}{Master of Computer Science (MCS) $\vert$ AI Specialized Track (In Progress)}
+\entry{University of Wisconsin--Madison}{Sep 2022 -- May 2026}{Bachelor of Science in Computer Science and Data Science}
+GPA: 3.66/4.00 \quad $\vert$ \quad Dean's List (four semesters)
 
-\section{Technical Skills}
-\textbf{Languages:} Python, C++, Java, SQL, JavaScript, C, Julia, Bash\\
-\textbf{ML / Data:} PyTorch, scikit-learn, XGBoost, pandas, NumPy, Hugging Face Transformers, NLTK, spaCy, Apache Spark\\
-\textbf{Software / Tools:} React, Flask, Git, Docker, Linux, pybind11
+\ressection{Technical Skills}
+\textbf{Programming Languages:} Python, C++, Java, SQL, JavaScript, C, Julia, Bash\\
+\textbf{Frameworks \& Libraries:} React, Flask, PyTorch, scikit-learn, XGBoost, pandas, NumPy\\
+\textbf{NLP \& Developer Tools:} Hugging Face Transformers, NLTK, spaCy, Git, Docker, Linux, Apache Spark, pybind11
 
-\section{Experience}
+\ressection{Experience}
 \entry{Jiangsu Delauney Information Technology Co., Ltd.}{Jun 2024 -- Jul 2024}{Software Development Engineer Intern $\vert$ Nanjing, China}
-\begin{itemize}
-  \item Implemented nine C++ / ObjectARX command handlers for AICAD, covering lines, polylines, circles, arcs, ellipses, text, layers, dimensions, and entity selection.
-  \item Registered custom drafting commands with the AutoCAD command system and used its database APIs to create drawing entities.
+\begin{tightitems}
+  \item Implemented nine C++/ObjectARX command handlers for AICAD, covering lines, polylines, circles, arcs, ellipses, text, layers, dimensions, and entity selection.
+  \item Registered custom drafting commands with the AutoCAD command system and used database APIs to create drawing entities.
   \item Added interactive parameter handling, input validation, and error checks for coordinates, dimensions, and geometry settings.
-\end{itemize}
+\end{tightitems}
 
-\section{Selected Projects}
-\entry{Stock Market Movement Prediction}{Nov 2026 -- Present}{Python $\vert$ UIUC CS 441}
-\begin{itemize}
-  \item Developed a next-session direction prediction pipeline for AAPL, MSFT, and NVDA using historical prices, technical indicators, and earnings data.
+\ressection{Projects}
+\entry{Stock Market Movement Prediction \normalfont\textit{Python / UIUC CS 441}}{Nov 2026 -- Present}{}
+\begin{tightitems}
+  \item Developed next-session stock-direction prediction for AAPL, MSFT, and NVDA using historical prices, technical indicators, and earnings data.
   \item Applied chronological splits and label-leakage safeguards; benchmarked Logistic Regression, XGBoost, LSTM, and GRU using log loss, ROC-AUC, and calibration.
-\end{itemize}
-\entry{Flexera Win/Loss Prediction System}{Sep 2025 -- Dec 2025}{Python, React $\vert$ CS 620 Capstone}
-\begin{itemize}
-  \item Built a sales-opportunity prediction pipeline using 60+ features and compared Logistic Regression, Random Forest, and XGBoost; project evaluation reports 99.14\% ROC-AUC, 99.80\% PR-AUC, and 0.0259 Brier score.
-  \item Integrated model outputs into a React dashboard for deal-level analysis, calibration, model performance, and competitor insights.
-\end{itemize}
-\entry{UW--Madison Course Optimization}{Sep 2024 -- Dec 2024}{Julia $\vert$ UW--Madison CS 524}
-\begin{itemize}
-  \item Developed a mixed-integer programming model to optimize multi-major course schedules under degree requirements; evaluated weighted priorities and scheduling scenarios.
-\end{itemize}
+\end{tightitems}
+\entry{Flexera Win/Loss Prediction System \normalfont\textit{Python, React / CS 620 Capstone}}{Sep 2025 -- Dec 2025}{}
+\begin{tightitems}
+  \item Built a sales-opportunity prediction pipeline with 60+ features; project evaluation reports 99.14\% ROC-AUC, 99.80\% PR-AUC, and 0.0259 Brier score.
+  \item Integrated model predictions into a React dashboard for deal-level analysis, performance visualization, and competitor insights.
+\end{tightitems}
+\entry{UW--Madison Course Optimization \normalfont\textit{Julia / UW--Madison CS 524}}{Sep 2024 -- Dec 2024}{}
+\begin{tightitems}
+  \item Developed a mixed-integer programming model for multi-major course schedules under degree requirements; evaluated weighted priorities and scheduling scenarios.
+\end{tightitems}
 
-\section{Research Experience}
-\entry{University of Wisconsin--Madison}{Feb 2025 -- May 2026}{Research Assistant $\vert$ Advisor: Bin Ran}
-\begin{itemize}
-  \item Investigated autonomous-vehicle trajectory planning with deep learning and Monte Carlo Tree Search; evaluated methods in simulation.
-  \item Evaluated risk-aware cooperative perception and co-authored \emph{SRA-CP} (arXiv:2511.17461), contributing to experimental analysis and manuscript writing. The study reports comparable safety-critical detection at 20\% of full-sharing bandwidth.
-\end{itemize}
-\entry{Southeast University}{Mar 2021 -- Sep 2021}{Research Assistant $\vert$ Advisor: Zhishui Liang}
-\begin{itemize}
+\ressection{Research Experience}
+\entry{University of Wisconsin--Madison \normalfont\textit{Research Assistant / Advisor: Bin Ran}}{Feb 2025 -- May 2026}{}
+\begin{tightitems}
+  \item Investigated autonomous-vehicle trajectory planning with deep learning and Monte Carlo Tree Search; assessed methods in simulation.
+  \item Evaluated risk-aware cooperative perception and co-authored \emph{SRA-CP} (arXiv:2511.17461), contributing to experimental analysis and manuscript writing; the study reports comparable safety-critical detection at 20\% of full-sharing bandwidth.
+\end{tightitems}
+\entry{Southeast University \normalfont\textit{Research Assistant / Advisor: Zhishui Liang}}{Mar 2021 -- Sep 2021}{}
+\begin{tightitems}
   \item Developed underwater bridge-damage recognition using image preprocessing, noise reduction, and a VGG16-based FCN; experiments reported over 90\% crack-identification accuracy.
-  \item Second author of a Springer conference paper presented at EVACES 2021, published in \emph{Lecture Notes in Civil Engineering}.
-\end{itemize}
+  \item Second author of a Springer conference paper presented at EVACES 2021 (published in \emph{Lecture Notes in Civil Engineering}).
+\end{tightitems}
 
-\section{Teaching \& Patents}
+\ressection{Teaching \& Patents}
 \textbf{Incoming Course Assistant, UIUC CS 128} (Spring 2027) \quad $\vert$ \quad
-\textbf{Course Mentor / Tutor, UW--Madison:} CS 200, CS 300, CS 252, Physics 109, Math 221, Math 222.\\[-1pt]
-\textbf{Patents:} CN113671032B (2023) and CN215574839U (2022), on underwater concrete damage detection and localization devices.
+\textbf{Course Mentor/Tutor, UW--Madison:} CS 200, CS 300, CS 252, Physics 109, Math 221, Math 222.\\
+\textbf{Patents:} CN113671032B (2023), CN215574839U (2022), on underwater concrete damage detection and localization devices.
 \end{document}
