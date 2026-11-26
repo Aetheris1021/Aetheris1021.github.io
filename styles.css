@@ -161,7 +161,7 @@ p {
 }
 
 h1 {
-  margin: 24px 0 28px;
+  margin: 24px 0 42px;
   font-size: clamp(4.5rem, 10vw, 8.8rem);
   line-height: 0.82;
   letter-spacing: -0.1em;
@@ -367,8 +367,7 @@ em {
 
 .timeline-item ul {
   margin: 24px 0 0;
-  padding-left: 0;
-  list-style: none;
+  padding-left: 18px;
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.8;
