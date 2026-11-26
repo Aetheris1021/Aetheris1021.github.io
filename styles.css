@@ -6,9 +6,9 @@
   --line: #dce6e1;
   --sage: #e3f0e9;
   --accent: #47745f;
-  --serif: Georgia, 'Times New Roman', serif;
   --sans: 'Manrope', sans-serif;
-  --mono: 'DM Mono', monospace;
+  --serif: 'Manrope', sans-serif;
+  --mono: 'Manrope', sans-serif;
 }
 
 * {
@@ -135,9 +135,9 @@ button {
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
-  gap: 80px;
+  gap: 64px;
   align-items: center;
-  padding-block: 78px 82px;
+  padding-block: 64px 68px;
 }
 
 .eyebrow,
@@ -256,15 +256,15 @@ h1 span {
 }
 
 .section {
-  padding-block: 54px;
+  padding-block: 42px;
   border-top: 1px solid var(--line);
 }
 
 .section-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 88px;
-  margin-top: 34px;
+  gap: 68px;
+  margin-top: 26px;
 }
 
 h2 {
@@ -280,9 +280,10 @@ h2 {
 }
 
 em {
-  font-family: var(--serif);
-  font-weight: 400;
-  letter-spacing: -0.06em;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .section-copy {
@@ -292,11 +293,11 @@ em {
 .section-copy p {
   color: var(--muted);
   font-size: 0.88rem;
-  line-height: 1.85;
+  line-height: 1.7;
 }
 
 .section-content {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .timeline-item,
@@ -371,19 +372,19 @@ em {
 }
 
 .timeline-item ul {
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   padding-left: 18px;
   color: var(--muted);
   font-size: 0.86rem;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .timeline-item li + li {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .project-card {
-  padding: 27px 0 30px;
+  padding: 20px 0 23px;
   border-top: 1px solid var(--line);
 }
 
@@ -402,12 +403,12 @@ em {
 
 .detail-bullets {
   max-width: 790px;
-  margin: 13px 0 0;
+  margin: 10px 0 0;
   padding-left: 18px;
   list-style-type: disc;
   color: var(--muted);
   font-size: 0.86rem;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .detail-bullets li::marker {
@@ -415,13 +416,13 @@ em {
 }
 
 .detail-bullets li + li {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .project-card a,
 .research-item a {
   display: inline-block;
-  margin-top: 17px;
+  margin-top: 12px;
   color: var(--accent);
   font-size: 0.73rem;
   font-weight: 800;
@@ -432,7 +433,7 @@ em {
   display: grid;
   grid-template-columns: 1fr auto;
   column-gap: 30px;
-  padding: 27px 0 30px;
+  padding: 20px 0 23px;
   border-top: 1px solid var(--line);
 }
 
@@ -447,11 +448,11 @@ em {
 }
 
 .teaching-content {
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .teaching-item {
-  padding: 24px 0;
+  padding: 18px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -486,9 +487,9 @@ em {
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  margin-top: 22px;
-  padding-block: 44px;
+  gap: 54px;
+  margin-top: 18px;
+  padding-block: 34px;
   border-top: 1px solid var(--line);
 }
 
@@ -500,7 +501,7 @@ em {
 .skill-groups {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 29px;
+  gap: 22px;
 }
 
 .skill-groups p {
@@ -515,12 +516,12 @@ em {
 }
 
 .contact {
-  padding-block: 70px;
+  padding-block: 54px;
   text-align: center;
 }
 
 .contact .section-label {
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 }
 
 .contact h2 {
@@ -622,7 +623,7 @@ em {
 
   .hero {
     display: block;
-    padding-block: 78px 86px;
+    padding-block: 60px 64px;
   }
 
   .hero h1 {
@@ -631,12 +632,12 @@ em {
 
   .hero-note {
     max-width: none;
-    margin-top: 58px;
+    margin-top: 42px;
     transform: none;
   }
 
   .section {
-    padding-block: 56px;
+    padding-block: 44px;
   }
 
   .section-grid,
@@ -645,11 +646,11 @@ em {
   }
 
   .section-grid {
-    margin-top: 28px;
+    margin-top: 22px;
   }
 
   .section-copy {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 
   .timeline-item {
@@ -682,7 +683,7 @@ em {
 
   .timeline-meta,
   .timeline-meta {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   .project-top {
@@ -715,7 +716,7 @@ em {
   .skill-groups {
     grid-template-columns: 1fr;
     gap: 22px;
-    margin-top: 38px;
+    margin-top: 28px;
   }
 
   .skills-heading h2 {
@@ -723,7 +724,7 @@ em {
   }
 
   .contact {
-    padding-block: 76px;
+    padding-block: 54px;
   }
 }
 
