@@ -137,7 +137,7 @@ button {
   grid-template-columns: 1.3fr 0.7fr;
   gap: 80px;
   align-items: end;
-  padding-block: 90px 92px;
+  padding-block: 78px 82px;
 }
 
 .eyebrow,
@@ -255,7 +255,7 @@ h1 span {
 }
 
 .section {
-  padding-block: 68px;
+  padding-block: 54px;
   border-top: 1px solid var(--line);
 }
 
@@ -290,7 +290,7 @@ em {
 }
 
 .section-content {
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .timeline-item,
@@ -300,6 +300,12 @@ em {
   gap: 48px;
   padding: 28px 0;
   border-top: 1px solid var(--line);
+}
+
+.education-item {
+  grid-template-columns: 200px minmax(0, 1fr) 320px;
+  gap: 28px;
+  padding: 20px 0;
 }
 
 .timeline-meta,
@@ -329,10 +335,14 @@ em {
 }
 
 .education-detail {
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.7;
+}
+
+.education-aside {
+  text-align: right;
 }
 
 .timeline-item ul {
@@ -430,7 +440,7 @@ em {
   grid-template-columns: 1fr 1fr;
   gap: 72px;
   margin-top: 22px;
-  padding-block: 56px;
+  padding-block: 44px;
   border-top: 1px solid var(--line);
 }
 
@@ -457,7 +467,7 @@ em {
 }
 
 .contact {
-  padding-block: 88px;
+  padding-block: 70px;
   text-align: center;
 }
 
@@ -577,7 +587,7 @@ em {
   }
 
   .section {
-    padding-block: 72px;
+    padding-block: 56px;
   }
 
   .section-grid,
@@ -598,9 +608,22 @@ em {
     display: block;
   }
 
+  .education-item {
+    padding: 18px 0;
+  }
+
+  .education-aside {
+    margin-top: 12px;
+    text-align: left;
+  }
+
   .timeline-meta,
   .education-meta {
     margin-bottom: 20px;
+  }
+
+  .education-item .education-meta {
+    margin-bottom: 12px;
   }
 
   .project-top {
@@ -632,7 +655,7 @@ em {
   }
 
   .contact {
-    padding-block: 100px;
+    padding-block: 76px;
   }
 }
 
