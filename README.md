@@ -1,20 +1,20 @@
-# Haoyang Ding — Personal & Academic Website
+# Haoyang Ding — Personal Website
 
-Personal website for [Haoyang Ding](https://github.com/Aetheris1021), focused on
-applied AI, large language models, and emerging medical applications.
+Personal and academic portfolio for Haoyang Ding, focused on applied AI, large language models,
+and medical applications.
 
 Live site: [aetheris1021.github.io](https://aetheris1021.github.io/)
 
-## Stack
+## Site structure
 
-This is a dependency-free static site built with:
-
-- `index.html` — page content and semantic structure
-- `styles.css` — responsive layout, typography, color system, and accessibility states
-- `script.js` — mobile navigation, dynamic year, and email fallback feedback
-- `favicon.svg` — lightweight HD monogram favicon
-- `output/pdf/Haoyang_Ding_CV.pdf` — current downloadable CV
+- `index.html` — About, Education, Internship, Project, Research, Skill, Teaching, and Contact content
+- `styles.css` — responsive layout, Manrope typography, and the navy, cream, and coral color palette
+- `script.js` — mobile navigation, current-year footer, and email contact feedback
+- `favicon.svg` — HD monogram favicon
+- `output/pdf/Haoyang_Ding_CV.pdf` — current one-page CV linked from the website
 - `output/pdf/Haoyang_Ding_CV.tex` — editable LaTeX source for the CV
+
+The site is a static page with no JavaScript build step. Manrope is loaded from Google Fonts.
 
 ## Local preview
 
@@ -26,12 +26,17 @@ python3 -m http.server 4173
 
 Then open [http://localhost:4173](http://localhost:4173).
 
-## Updating the site
+## Updating the CV
 
-- Edit project, research, education, and experience content in `index.html`.
-- Update links and contact information in `index.html`.
-- Adjust the color and typography variables at the top of `styles.css`.
-- Keep technical claims, metrics, and publication details consistent with the linked repository or paper.
-- Keep the canonical URL and social metadata in `index.html` aligned with the live site.
+From `output/pdf`, compile the LaTeX source and replace the downloadable PDF:
 
-GitHub Pages deploys the repository root from the `main` branch.
+```bash
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp Haoyang_Ding_CV.tex
+cp /tmp/Haoyang_Ding_CV.pdf Haoyang_Ding_CV.pdf
+```
+
+After changing the PDF, update the version query on the CV link in `index.html` so browsers fetch the new file. Keep CV and website dates, titles, project details, and research results aligned.
+
+## Deployment
+
+GitHub Pages publishes the repository root from the `main` branch.
