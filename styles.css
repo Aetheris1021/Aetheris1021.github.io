@@ -182,6 +182,7 @@ h1 span {
 
 .hero-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 24px;
 }
@@ -273,7 +274,7 @@ h1 span {
 }
 
 .about-grid .section-copy {
-  max-width: 800px;
+  max-width: none;
   margin-top: 24px;
   padding-top: 0;
 }
@@ -547,6 +548,11 @@ em {
   font-weight: 700;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+}
+
+.hero-links .cv-link {
+  display: inline-flex;
+  margin: 0;
 }
 
 .site-footer {
