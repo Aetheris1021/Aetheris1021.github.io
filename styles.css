@@ -1,11 +1,12 @@
 :root {
-  --ink: #243331;
-  --muted: #5f706c;
-  --paper: #fbfcfa;
-  --surface: #f1f6f3;
-  --line: #dce6e1;
-  --sage: #e3f0e9;
-  --accent: #47745f;
+  --ink: #1d3048;
+  --muted: #617084;
+  --paper: #fbf8f1;
+  --surface: #f3efe6;
+  --line: #e3ddd1;
+  --accent: #385674;
+  --coral: #ef9a84;
+  --coral-hover: #f4aa96;
   --sans: 'Manrope', sans-serif;
   --serif: 'Manrope', sans-serif;
   --mono: 'Manrope', sans-serif;
@@ -74,7 +75,7 @@ button {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(251, 252, 250, 0.92);
+  background: rgba(251, 248, 241, 0.92);
 }
 
 .nav {
@@ -116,14 +117,14 @@ button {
 
 .nav-contact {
   padding: 10px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--coral);
   border-radius: 5px;
-  background: #fff;
+  background: var(--coral);
 }
 
 .nav-contact:hover {
-  border-color: var(--accent);
-  background: var(--sage);
+  border-color: var(--coral-hover);
+  background: var(--coral-hover);
 }
 
 .nav-toggle {
@@ -195,10 +196,10 @@ h1 span {
   align-items: center;
   gap: 22px;
   padding: 13px 16px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--coral);
   border-radius: 5px;
   color: var(--ink);
-  background: var(--sage);
+  background: var(--coral);
   font-size: 0.74rem;
   font-weight: 800;
   text-decoration: none;
@@ -206,7 +207,7 @@ h1 span {
 }
 
 .button:hover {
-  background: #cfe5da;
+  background: var(--coral-hover);
   transform: translateY(-2px);
 }
 
